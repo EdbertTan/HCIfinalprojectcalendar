@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+.mySlides0 {display: none}
+.mySlides1 {display: none}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Slideshow container1 */
+.slideshow-container1 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot0 {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot0:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+/* The dots/bullets/indicators */
+.dot1 {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot1:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade1 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div style="background-image:url(poto2/cal2024.jpg);margin:auto;display:block;height:500px;width:1300px;">
+</div>
+
+<p style="position:fixed;right:0;"><center><h2>interactive calendar</h2></center></p>
+
+
+<p style="clear:both";><center><h2 style="margin-top:10px;">months</h2></center></p>
+
+<div class="slideshow-container">
+	<div class="mySlides0 fade">
+		<div class="numbertext">1 / 12</div>
+		<center><img src="poto2/jan.jpg" style="height:500px;width:50%"></center>
+	</div>
+
+	<div class="mySlides0 fade">
+		<div class="numbertext">2 / 12</div>
+		<center><img src="poto2/feb.jpg" style="height:500px;width:50%"></center>
+	</div>
+
+	<div class="mySlides0 fade">
+		<div class="numbertext">3 / 12</div>
+		<center><img src="poto2/mar.jpg" style="height:500px;width:50%"></center>
+	</div>
+
+	<div class="mySlides0 fade">
+		<div class="numbertext">4 / 12</div>
+		<center><img src="poto2/april.jpg" style="height:500px;width:50%"></center>
+	</div>
+
+	<div class="mySlides0 fade">
+		<div class="numbertext">5 / 12</div>
+		<center><img src="poto2/may.jpg" style="height:500px;width:50%"></center>
+	</div>
+	<div class="mySlides0 fade">
+		<div class="numbertext">6 / 12</div>
+		<center><img src="poto2/jun.jpg" style="height:500px;width:50%"></center>
+	</div>
+	<div class="mySlides0 fade">
+		<div class="numbertext">7 / 12</div>
+		<center><img src="poto2/jul.jpg" style="height:500px;width:50%"></center>
+	</div>
+	<div class="mySlides0 fade">
+		<div class="numbertext">8 / 12</div>
+		<center><img src="poto2/aug.jpg" style="height:500px;width:50%"></center>
+	</div>
+	<div class="mySlides0 fade">
+		<div class="numbertext">9 / 12</div>
+		<center><img src="poto2/sep.jpg" style="height:500px;width:50%"></center>
+	</div>
+	<div class="mySlides0 fade">
+		<div class="numbertext">10 / 12</div>
+		<center><img src="poto2/oct.jpg" style="height:500px;width:50%"></center>
+	</div>
+	<div class="mySlides0 fade">
+		<div class="numbertext">11 / 12</div>
+		<center><img src="poto2/nov.jpg" style="height:500px;width:50%"></center>
+	</div>
+	<div class="mySlides0 fade">
+		<div class="numbertext">12 / 12</div>
+		<center><img src="poto2/dec.jpg" style="height:500px;width:50%"></center>
+	</div>
+
+<a class="prev" onclick="plusSlides(-1,0)"><</a>
+<a class="next" onclick="plusSlides(1,0)">></a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot0" onclick="currentSlide(1,0)"></span> 
+  <span class="dot0" onclick="currentSlide(2,0)"></span> 
+  <span class="dot0" onclick="currentSlide(3,0)"></span> 
+  <span class="dot0" onclick="currentSlide(4,0)"></span> 
+  <span class="dot0" onclick="currentSlide(5,0)"></span>
+  <span class="dot0" onclick="currentSlide(6,0)"></span>
+  <span class="dot0" onclick="currentSlide(7,0)"></span>
+  <span class="dot0" onclick="currentSlide(8,0)"></span>
+  <span class="dot0" onclick="currentSlide(9,0)"></span>
+  <span class="dot0" onclick="currentSlide(10,0)"></span>
+  <span class="dot0" onclick="currentSlide(11,0)"></span>
+  <span class="dot0" onclick="currentSlide(12,0)"></span>
+</div>
+
+
+
+<p style="clear:both";><center><h2 style="margin-top:10px;">My Work at Binus</h2></center></p>
+
+<div class="slideshow-container1">
+	<div class="mySlides1 fade1">
+		<div class="numbertext">1 / 5</div>
+		<center><img src="poto2/work1.jpg" style="height:500px;width:60%"></center>
+	</div>
+
+	<div class="mySlides1 fade1">
+		<div class="numbertext">2 / 5</div>
+		<center><img src="poto2/work2.jpg" style="height:500px;width:60%"></center>
+	</div>
+
+	<div class="mySlides1 fade1">
+		<div class="numbertext">3 / 5</div>
+		<center><img src="poto2/work3.jpg" style="height:500px;width:60%"></center>
+	</div>
+
+	<div class="mySlides1 fade1">
+		<div class="numbertext">4 / 5</div>
+		<center><img src="poto2/work4.jpg" style="height:500px;width:60%"></center>
+	</div>
+
+	<div class="mySlides1 fade1">
+		<div class="numbertext">5 / 5</div>
+		<center><img src="poto2/work5.jpg" style="height:500px;width:60%"></center>
+	</div>
+
+<a class="prev" onclick="plusSlides(-1,1)"><</a>
+<a class="next" onclick="plusSlides(1,1)">></a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot1" onclick="currentSlide(1,1)"></span> 
+  <span class="dot1" onclick="currentSlide(2,1)"></span> 
+  <span class="dot1" onclick="currentSlide(3,1)"></span> 
+  <span class="dot1" onclick="currentSlide(4,1)"></span> 
+  <span class="dot1" onclick="currentSlide(5,1)"></span> 
+</div>
+
+
+
+
+<script>
+const slindex = [];
+slindex[0]= 1;
+slindex[1]= 1;
+// slindex[2]= 3;
+
+
+
+
+// let slideIndex = 1;
+// showSlides(slideIndex);
+showSlides(slindex[0],0);
+showSlides(slindex[1],1);
+// showSlides(slindex[0],1);
+
+function plusSlides(n,ngroup) {
+//  showSlides(slideIndex += n);
+	slindex[ngroup] += n;
+	showSlides(slindex[ngroup],ngroup);
+}
+
+function currentSlide(n,ngroup) {
+//  showSlides(slideIndex = n);
+	slindex[ngroup] = n
+	showSlides(slindex[ngroup],ngroup);
+}
+
+function showSlides(n,ngroup) {
+  let i;
+
+  
+  if (ngroup==0) {
+	let slides = document.getElementsByClassName("mySlides0");
+	let dots = document.getElementsByClassName("dot0");
+	
+    if (n > slides.length) {slindex[ngroup] = 1}    
+
+    if (n < 1) {slindex[ngroup] = slides.length}
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+  
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slindex[ngroup]-1].style.display = "block";  
+    dots[slindex[ngroup]-1].className += " active";
+  } else {
+  
+	let slides1 = document.getElementsByClassName("mySlides1");
+	let dots1 = document.getElementsByClassName("dot1");
+	
+    if (n > slides1.length) {slindex[ngroup] = 1}    
+
+    if (n < 1) {slindex[ngroup] = slides1.length}
+
+
+    for (i = 0; i < slides1.length; i++) {
+        slides1[i].style.display = "none";  
+    }
+
+    slides1[slindex[ngroup]-1].style.display = "block"; 
+  
+    for (i = 0; i < dots1.length; i++) {
+      dots1[i].className = dots1[i].className.replace(" active", "");
+    }
+
+    dots1[slindex[ngroup]-1].className += " active";
+	
+  }  
+	
+  
+}
+</script>
+
+</body>
+</html> 
